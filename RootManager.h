@@ -18,6 +18,7 @@ namespace Neno
         void idle();
         void inputFromKeyboard(unsigned char key, int x, int y);
         void inputFromMouse(int button, int state, int x, int y);
+        void inputFromMouseMotion(int x, int y);
         RootManager(int w, int h)
         {
             player_ = std::make_unique<Player>((double)w / (double)h);

@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/OpenGL_Class.dir/Star.cpp.o"
   "CMakeFiles/OpenGL_Class.dir/Transform.cpp.o"
   "CMakeFiles/OpenGL_Class.dir/Vector3.cpp.o"
+  "CMakeFiles/OpenGL_Class.dir/Utility.cpp.o"
   "OpenGL_Class.pdb"
   "OpenGL_Class"
 )

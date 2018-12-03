@@ -34,6 +34,7 @@ CMakeFiles/OpenGL_Class.dir/Player.cpp.o: ../Object.h
 CMakeFiles/OpenGL_Class.dir/Player.cpp.o: ../Player.cpp
 CMakeFiles/OpenGL_Class.dir/Player.cpp.o: ../Player.h
 CMakeFiles/OpenGL_Class.dir/Player.cpp.o: ../Transform.h
+CMakeFiles/OpenGL_Class.dir/Player.cpp.o: ../Utility.h
 CMakeFiles/OpenGL_Class.dir/Player.cpp.o: ../Vector3.h
 CMakeFiles/OpenGL_Class.dir/Player.cpp.o: ../pch.h
 
@@ -68,6 +69,10 @@ CMakeFiles/OpenGL_Class.dir/Transform.cpp.o: ../Transform.cpp
 CMakeFiles/OpenGL_Class.dir/Transform.cpp.o: ../Transform.h
 CMakeFiles/OpenGL_Class.dir/Transform.cpp.o: ../Vector3.h
 CMakeFiles/OpenGL_Class.dir/Transform.cpp.o: ../pch.h
+
+CMakeFiles/OpenGL_Class.dir/Utility.cpp.o: ../Utility.cpp
+CMakeFiles/OpenGL_Class.dir/Utility.cpp.o: ../Utility.h
+CMakeFiles/OpenGL_Class.dir/Utility.cpp.o: ../pch.h
 
 CMakeFiles/OpenGL_Class.dir/Vector3.cpp.o: ../Vector3.cpp
 CMakeFiles/OpenGL_Class.dir/Vector3.cpp.o: ../Vector3.h

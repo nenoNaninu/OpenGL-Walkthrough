@@ -55,6 +55,11 @@ void resize(int w, int h)
     rootManager -> resize(w, h);
 }
 
+void mouseMotion(int x, int y)
+{
+    rootManager ->inputFromMouseMotion(x,y);
+}
+
 int main(int argc, char *argv[])
 {
     glutInitWindowSize(640, 480);
@@ -64,6 +69,7 @@ int main(int argc, char *argv[])
     glutDisplayFunc(display);
     glutReshapeFunc(resize);
     glutMouseFunc(mouse);
+    glutMotionFunc(mouseMotion);
     glutKeyboardFunc(keyboard);
     glutKeyboardUpFunc(keybordUp);
     glutIdleFunc(idle);

@@ -366,6 +366,33 @@ Transform.cpp.s:
 	$(MAKE) -f CMakeFiles/OpenGL_Class.dir/build.make CMakeFiles/OpenGL_Class.dir/Transform.cpp.s
 .PHONY : Transform.cpp.s
 
+Utility.o: Utility.cpp.o
+
+.PHONY : Utility.o
+
+# target to build an object file
+Utility.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGL_Class.dir/build.make CMakeFiles/OpenGL_Class.dir/Utility.cpp.o
+.PHONY : Utility.cpp.o
+
+Utility.i: Utility.cpp.i
+
+.PHONY : Utility.i
+
+# target to preprocess a source file
+Utility.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGL_Class.dir/build.make CMakeFiles/OpenGL_Class.dir/Utility.cpp.i
+.PHONY : Utility.cpp.i
+
+Utility.s: Utility.cpp.s
+
+.PHONY : Utility.s
+
+# target to generate assembly for a file
+Utility.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGL_Class.dir/build.make CMakeFiles/OpenGL_Class.dir/Utility.cpp.s
+.PHONY : Utility.cpp.s
+
 Vector3.o: Vector3.cpp.o
 
 .PHONY : Vector3.o
@@ -456,6 +483,9 @@ help:
 	@echo "... Transform.o"
 	@echo "... Transform.i"
 	@echo "... Transform.s"
+	@echo "... Utility.o"
+	@echo "... Utility.i"
+	@echo "... Utility.s"
 	@echo "... Vector3.o"
 	@echo "... Vector3.i"
 	@echo "... Vector3.s"

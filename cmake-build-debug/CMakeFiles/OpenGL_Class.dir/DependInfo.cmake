@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/asteria/CLionProjects/OpenGL_Class/StageManager.cpp" "/home/asteria/CLionProjects/OpenGL_Class/cmake-build-debug/CMakeFiles/OpenGL_Class.dir/StageManager.cpp.o"
   "/home/asteria/CLionProjects/OpenGL_Class/Star.cpp" "/home/asteria/CLionProjects/OpenGL_Class/cmake-build-debug/CMakeFiles/OpenGL_Class.dir/Star.cpp.o"
   "/home/asteria/CLionProjects/OpenGL_Class/Transform.cpp" "/home/asteria/CLionProjects/OpenGL_Class/cmake-build-debug/CMakeFiles/OpenGL_Class.dir/Transform.cpp.o"
+  "/home/asteria/CLionProjects/OpenGL_Class/Utility.cpp" "/home/asteria/CLionProjects/OpenGL_Class/cmake-build-debug/CMakeFiles/OpenGL_Class.dir/Utility.cpp.o"
   "/home/asteria/CLionProjects/OpenGL_Class/Vector3.cpp" "/home/asteria/CLionProjects/OpenGL_Class/cmake-build-debug/CMakeFiles/OpenGL_Class.dir/Vector3.cpp.o"
   "/home/asteria/CLionProjects/OpenGL_Class/pch.cpp" "/home/asteria/CLionProjects/OpenGL_Class/cmake-build-debug/CMakeFiles/OpenGL_Class.dir/pch.cpp.o"
   )

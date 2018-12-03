@@ -53,10 +53,18 @@ Player.h
 /home/asteria/CLionProjects/OpenGL_Class/Player.h
 InputManager.h
 /home/asteria/CLionProjects/OpenGL_Class/InputManager.h
+cmath
+-
+iostream
+-
+Utility.h
+/home/asteria/CLionProjects/OpenGL_Class/Utility.h
 
 /home/asteria/CLionProjects/OpenGL_Class/Player.h
 Object.h
 /home/asteria/CLionProjects/OpenGL_Class/Object.h
+Vector3.h
+/home/asteria/CLionProjects/OpenGL_Class/Vector3.h
 
 /home/asteria/CLionProjects/OpenGL_Class/RootManager.cpp
 pch.h
@@ -121,6 +129,12 @@ Transform.h
 /home/asteria/CLionProjects/OpenGL_Class/Transform.h
 Vector3.h
 /home/asteria/CLionProjects/OpenGL_Class/Vector3.h
+
+/home/asteria/CLionProjects/OpenGL_Class/Utility.cpp
+Utility.h
+/home/asteria/CLionProjects/OpenGL_Class/Utility.h
+cmath
+-
 
 /home/asteria/CLionProjects/OpenGL_Class/Utility.h
 pch.h

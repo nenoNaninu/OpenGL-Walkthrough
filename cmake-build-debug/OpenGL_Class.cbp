@@ -135,6 +135,12 @@
 		<Unit filename="/home/asteria/CLionProjects/OpenGL_Class/Transform.h">
 			<Option target="OpenGL_Class"/>
 		</Unit>
+		<Unit filename="/home/asteria/CLionProjects/OpenGL_Class/Utility.cpp">
+			<Option target="OpenGL_Class"/>
+		</Unit>
+		<Unit filename="/home/asteria/CLionProjects/OpenGL_Class/Utility.h">
+			<Option target="OpenGL_Class"/>
+		</Unit>
 		<Unit filename="/home/asteria/CLionProjects/OpenGL_Class/Vector3.cpp">
 			<Option target="OpenGL_Class"/>
 		</Unit>

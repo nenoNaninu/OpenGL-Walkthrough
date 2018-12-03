@@ -4,6 +4,7 @@ namespace Neno
 {
     struct Vector3
     {
+    public:
         float x, y, z;
 
         Vector3()

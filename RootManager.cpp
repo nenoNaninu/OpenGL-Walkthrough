@@ -45,7 +45,12 @@ namespace Neno
 
     void RootManager::inputFromMouse(int button, int state, int x, int y)
     {
+        player_ ->inputFromMouse(button,state,x,y);
+    }
 
+    void RootManager::inputFromMouseMotion(int x, int y)
+    {
+        player_ -> inputFromMouseMotion(x,y);
     }
 
 }

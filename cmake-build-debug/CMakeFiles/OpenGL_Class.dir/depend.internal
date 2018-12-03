@@ -35,6 +35,7 @@ CMakeFiles/OpenGL_Class.dir/Player.cpp.o
  /home/asteria/CLionProjects/OpenGL_Class/Player.cpp
  /home/asteria/CLionProjects/OpenGL_Class/Player.h
  /home/asteria/CLionProjects/OpenGL_Class/Transform.h
+ /home/asteria/CLionProjects/OpenGL_Class/Utility.h
  /home/asteria/CLionProjects/OpenGL_Class/Vector3.h
  /home/asteria/CLionProjects/OpenGL_Class/pch.h
 CMakeFiles/OpenGL_Class.dir/RootManager.cpp.o
@@ -68,6 +69,10 @@ CMakeFiles/OpenGL_Class.dir/Transform.cpp.o
  /home/asteria/CLionProjects/OpenGL_Class/Transform.cpp
  /home/asteria/CLionProjects/OpenGL_Class/Transform.h
  /home/asteria/CLionProjects/OpenGL_Class/Vector3.h
+ /home/asteria/CLionProjects/OpenGL_Class/pch.h
+CMakeFiles/OpenGL_Class.dir/Utility.cpp.o
+ /home/asteria/CLionProjects/OpenGL_Class/Utility.cpp
+ /home/asteria/CLionProjects/OpenGL_Class/Utility.h
  /home/asteria/CLionProjects/OpenGL_Class/pch.h
 CMakeFiles/OpenGL_Class.dir/Vector3.cpp.o
  /home/asteria/CLionProjects/OpenGL_Class/Vector3.cpp
