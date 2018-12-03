@@ -20,6 +20,7 @@ namespace Neno
 
 
         Vector3 currentLookDirection_ = Vector3(0, 1, 0);
+        Vector3 rightDirection_ = Vector3(1, 0, 0);
         int prevMousePosX_, prevMousePosY_;
         bool mouseDownFlag_ = false;
     public:

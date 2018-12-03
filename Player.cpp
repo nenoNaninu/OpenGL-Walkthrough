@@ -41,20 +41,14 @@ namespace Neno
 
         if (InputManager::checkKeyFlag('a'))
         {
-            double panRad = deg2rad(panAngle_ + 90.0);
-            double tiltRad = deg2rad(tiltAngle_);
-            double costilt = std::cos(tiltRad);
-            transform_.position.x -= std::sin(panRad) * costilt * moveSpeed_;
-            transform_.position.y -= std::cos(panRad) * costilt * moveSpeed_;
+            transform_.position.x -= rightDirection_.x * moveSpeed_;
+            transform_.position.y -= rightDirection_.y * moveSpeed_;
         }
 
         if (InputManager::checkKeyFlag('d'))
         {
-            double panRad = deg2rad(panAngle_ + 90.0);
-            double tiltRad = deg2rad(tiltAngle_);
-            double costilt = std::cos(tiltRad);
-            transform_.position.x += std::sin(panRad) * costilt * moveSpeed_;
-            transform_.position.y += std::cos(panRad) * costilt * moveSpeed_;
+            transform_.position.x += rightDirection_.x * moveSpeed_;
+            transform_.position.y += rightDirection_.y * moveSpeed_;
         }
 
         if (InputManager::checkKeyFlag('z'))
@@ -138,6 +132,10 @@ namespace Neno
             currentLookDirection_.x = std::sin(panRad) * costilt;
             currentLookDirection_.y = std::cos(panRad) * costilt;
             currentLookDirection_.z = std::sin(tiltRad);
+
+            double rightPanRad = deg2rad(panAngle_ + 90.0);
+            rightDirection_.x = std::sin(rightPanRad) * costilt;
+            rightDirection_.y = std::cos(rightPanRad) * costilt;
         }
     }
 }
