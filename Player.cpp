@@ -9,18 +9,9 @@ namespace Neno
 {
     void Player::draw()
     {
-        using Utility::deg2rad;
 
         glLoadIdentity();
         gluPerspective(30, cameraAspect_, 1.0, 1000.0);
-
-
-        double panRad = deg2rad(panAngle_);
-        double tiltRad = deg2rad(tiltAngle_);
-        double costilt = std::cos(tiltRad);
-        currentLookDirection_.x = std::sin(panRad) * costilt;
-        currentLookDirection_.y = std::cos(panRad) * costilt;
-        currentLookDirection_.z = std::sin(tiltRad);
 
         gluLookAt(transform_.position.x,
                   transform_.position.y,
@@ -38,30 +29,40 @@ namespace Neno
 
         if (InputManager::checkKeyFlag('w'))
         {
-            transform_.position.y += moveSpeed_;
-        }
-
-        if (InputManager::checkKeyFlag('a'))
-        {
-            transform_.position.x -= moveSpeed_;
+            transform_.position.x += currentLookDirection_.x * moveSpeed_;
+            transform_.position.y += currentLookDirection_.y * moveSpeed_;
         }
 
         if (InputManager::checkKeyFlag('s'))
         {
-            transform_.position.y -= moveSpeed_;
+            transform_.position.x -= currentLookDirection_.x * moveSpeed_;
+            transform_.position.y -= currentLookDirection_.y * moveSpeed_;
+        }
+
+        if (InputManager::checkKeyFlag('a'))
+        {
+            double panRad = deg2rad(panAngle_ + 90.0);
+            double tiltRad = deg2rad(tiltAngle_);
+            double costilt = std::cos(tiltRad);
+            transform_.position.x -= std::sin(panRad) * costilt * moveSpeed_;
+            transform_.position.y -= std::cos(panRad) * costilt * moveSpeed_;
         }
 
         if (InputManager::checkKeyFlag('d'))
         {
-            transform_.position.x += moveSpeed_;
+            double panRad = deg2rad(panAngle_ + 90.0);
+            double tiltRad = deg2rad(tiltAngle_);
+            double costilt = std::cos(tiltRad);
+            transform_.position.x += std::sin(panRad) * costilt * moveSpeed_;
+            transform_.position.y += std::cos(panRad) * costilt * moveSpeed_;
         }
 
-        if(InputManager::checkKeyFlag('z'))
+        if (InputManager::checkKeyFlag('z'))
         {
             transform_.position.z += moveSpeed_;
         }
 
-        if(InputManager::checkKeyFlag('x'))
+        if (InputManager::checkKeyFlag('x'))
         {
             transform_.position.z -= moveSpeed_;
         }
@@ -97,38 +98,46 @@ namespace Neno
     //1ピクセルあたり0.1度回転するとする.
     void Player::inputFromMouseMotion(int x, int y)
     {
-        if(mouseDownFlag_)
+        if (mouseDownFlag_)
         {
-            std::cout << x <<", " << y << std::endl;
-            double dx = (x - prevMousePosX_)*0.2;
-            double dy = (y - prevMousePosY_)*-0.2;
+            double dx = (x - prevMousePosX_) * 0.2;
+            double dy = (y - prevMousePosY_) * -0.2;
 
             panAngle_ += dx;
             tiltAngle_ += dy;
 
             //角度の制限。
-            if(panAngle_ < -180)
+            if (panAngle_ < -180)
             {
                 panAngle_ += 360;
             }
 
-            if(180 < panAngle_)
+            if (180 < panAngle_)
             {
                 panAngle_ -= 360;
             }
 
-            if(tiltAngle_ < -85)
+            if (tiltAngle_ < -85)
             {
                 tiltAngle_ = -85;
             }
 
-            if(85 < tiltAngle_)
+            if (85 < tiltAngle_)
             {
                 tiltAngle_ = 85;
             }
 
             prevMousePosX_ = x;
             prevMousePosY_ = y;
+
+            using Utility::deg2rad;
+
+            double panRad = deg2rad(panAngle_);
+            double tiltRad = deg2rad(tiltAngle_);
+            double costilt = std::cos(tiltRad);
+            currentLookDirection_.x = std::sin(panRad) * costilt;
+            currentLookDirection_.y = std::cos(panRad) * costilt;
+            currentLookDirection_.z = std::sin(tiltRad);
         }
     }
 }

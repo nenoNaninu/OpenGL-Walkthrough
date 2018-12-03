@@ -1,4 +1,5 @@
 ﻿#pragma once
+
 #include "Object.h"
 #include "Vector3.h"
 
@@ -18,15 +19,21 @@ namespace Neno
         double tiltAngle_ = 0;
 
 
-        Vector3 currentLookDirection_= Vector3(0,1,0);
-        int prevMousePosX_,prevMousePosY_;
+        Vector3 currentLookDirection_ = Vector3(0, 1, 0);
+        int prevMousePosX_, prevMousePosY_;
         bool mouseDownFlag_ = false;
     public:
         void draw() override;
-        Player(double cameraAspect) :cameraAspect_(cameraAspect) {};
+
+        Player(double cameraAspect) : cameraAspect_(cameraAspect)
+        {};
+
         void setNewCameraAspect(double newAspect);
+
         void update() override;
-        void inputFromMouse(int button,int state,int x, int y);
+
+        void inputFromMouse(int button, int state, int x, int y);
+
         void inputFromMouseMotion(int x, int y);
     };
 }

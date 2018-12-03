@@ -1,4 +1,5 @@
 ﻿#pragma once
+
 #include "Object.h"
 #include <vector>
 #include <memory>
@@ -19,6 +20,7 @@ namespace Neno
 
     public:
         void update() override;
+
         void draw() override;
 
         void drawSkyBox();
@@ -29,11 +31,12 @@ namespace Neno
             FILE *fp;
 
             /* テクスチャ画像の読み込み */
-            if ((fp = fopen(textureName.c_str(), "rb")) != NULL) {
+            if ((fp = fopen(textureName.c_str(), "rb")) != NULL)
+            {
                 fread(texture, sizeof texture, 1, fp);
                 fclose(fp);
-            }
-            else {
+            } else
+            {
                 perror(textureName.c_str());
             }
 
@@ -56,7 +59,7 @@ namespace Neno
                 {
                     for (int z = -5; z < 5; z++)
                     {
-                        starVector_.push_back(std::make_unique < Star >(x* 10.0, y* 10.0, z* 10.0));
+                        starVector_.push_back(std::make_unique<Star>(x * 10.0, y * 10.0, z * 10.0));
                     }
                 }
             }

@@ -21,7 +21,7 @@ namespace Neno
             this->z = z;
         }
 
-        const Vector3 operator+(const Vector3& other)const
+        const Vector3 operator+(const Vector3 &other) const
         {
             Vector3 answer;
             answer.x = this->x + other.x;
@@ -30,7 +30,7 @@ namespace Neno
             return answer;
         }
 
-        Vector3& operator+=(const Vector3& other)
+        Vector3 &operator+=(const Vector3 &other)
         {
             *this = *this + other;
             return *this;

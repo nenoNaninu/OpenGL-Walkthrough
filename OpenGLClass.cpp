@@ -11,12 +11,12 @@ std::unique_ptr<Neno::RootManager> rootManager;
 
 void display()
 {
-    rootManager -> display();
+    rootManager->display();
 }
 
 void idle()
 {
-    rootManager -> idle();
+    rootManager->idle();
 }
 
 void init()
@@ -27,18 +27,19 @@ void init()
 
 void mouse(int button, int state, int x, int y)
 {
-    rootManager -> inputFromMouse(button, state, x, y);
+    rootManager->inputFromMouse(button, state, x, y);
 }
 
 
 void keyboard(unsigned char key, int x, int y)
 {
-    switch (key) {
-    case '\033':  /* '\033' は ESC の ASCII コード */
+    switch (key)
+    {
+        case '\033':  /* '\033' は ESC の ASCII コード */
 //        glutLeaveMainLoop();
-        exit(0);
-    default:
-        break;
+            exit(0);
+        default:
+            break;
     }
     std::cout << "registrate" << key << std::endl;
     InputManager::registrateInput(key);
@@ -52,12 +53,12 @@ void keybordUp(unsigned char key, int x, int y)
 
 void resize(int w, int h)
 {
-    rootManager -> resize(w, h);
+    rootManager->resize(w, h);
 }
 
 void mouseMotion(int x, int y)
 {
-    rootManager ->inputFromMouseMotion(x,y);
+    rootManager->inputFromMouseMotion(x, y);
 }
 
 int main(int argc, char *argv[])

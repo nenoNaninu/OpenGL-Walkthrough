@@ -18,5 +18,5 @@ namespace Neno
     {
         transform_.rotation = rotation;
     }
-    
+
 }
