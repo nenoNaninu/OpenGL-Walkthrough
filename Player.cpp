@@ -134,8 +134,8 @@ namespace Neno
             currentLookDirection_.z = std::sin(tiltRad);
 
             double rightPanRad = deg2rad(panAngle_ + 90.0);
-            rightDirection_.x = std::sin(rightPanRad) * costilt;
-            rightDirection_.y = std::cos(rightPanRad) * costilt;
+            rightDirection_.x = std::sin(rightPanRad);
+            rightDirection_.y = std::cos(rightPanRad);
         }
     }
 }
