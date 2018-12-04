@@ -26,17 +26,18 @@ namespace Neno
     void Player::update()
     {
         using Utility::deg2rad;
-
+        double tiltRad = deg2rad(tiltAngle_);
+        double costilt = std::cos(tiltRad);
         if (InputManager::checkKeyFlag('w'))
         {
-            transform_.position.x += currentLookDirection_.x * moveSpeed_;
-            transform_.position.y += currentLookDirection_.y * moveSpeed_;
+            transform_.position.x += currentLookDirection_.x * moveSpeed_ / costilt;
+            transform_.position.y += currentLookDirection_.y * moveSpeed_ / costilt;
         }
 
         if (InputManager::checkKeyFlag('s'))
         {
-            transform_.position.x -= currentLookDirection_.x * moveSpeed_;
-            transform_.position.y -= currentLookDirection_.y * moveSpeed_;
+            transform_.position.x -= currentLookDirection_.x * moveSpeed_ / costilt;
+            transform_.position.y -= currentLookDirection_.y * moveSpeed_ / costilt;
         }
 
         if (InputManager::checkKeyFlag('a'))
