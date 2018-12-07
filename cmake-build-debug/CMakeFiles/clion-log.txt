@@ -1,4 +1,0 @@
-/home/asteria/app/clion-2018.1.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc-5 -DCMAKE_CXX_COMPILER=/usr/bin/g++-5 -G "CodeBlocks - Unix Makefiles" /home/asteria/CLionProjects/OpenGL_Class
--- Configuring done
--- Generating done
--- Build files have been written to: /home/asteria/CLionProjects/OpenGL_Class/cmake-build-debug

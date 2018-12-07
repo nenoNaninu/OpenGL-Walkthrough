@@ -1,3 +1,0 @@
-/home/asteria/CLionProjects/OpenGL_Class/build/CMakeFiles/edit_cache.dir
-/home/asteria/CLionProjects/OpenGL_Class/build/CMakeFiles/rebuild_cache.dir
-/home/asteria/CLionProjects/OpenGL_Class/build/CMakeFiles/OpenGL_Class.dir
